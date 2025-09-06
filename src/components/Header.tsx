@@ -8,15 +8,15 @@ interface HeaderProps {
 
 export const Header: React.FC<HeaderProps> = ({ title, onBack }) => {
   return (
-    <header className="flex items-center gap-3 mb-8">
+    <header className="flex items-center gap-1">
       <button
         onClick={onBack}
         className="p-2 hover:bg-gray-100 rounded-full transition-colors"
         aria-label="Go back"
       >
-        <ArrowLeft className="w-5 h-5 text-gray-700" />
+        <ArrowLeft className="w-4 h-4 text-gray-700" />
       </button>
-      <h1 className="text-lg font-medium text-gray-900">{title}</h1>
+      <h1 className="text-md font-medium text-gray-900">{title}</h1>
     </header>
   );
 };

@@ -43,7 +43,7 @@ export const Dropdown: React.FC<DropdownProps> = ({
     <div className="relative flex-1" ref={dropdownRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center justify-between w-full px-2.5 py-1.5 text-left bg-white border border-gray-100 rounded-lg shadow-md focus:outline-none focus:ring-0 focus:ring-blue-500 transition-colors"
+        className="flex items-center justify-between w-full px-2.5 py-1.5 text-left bg-white border border-gray-100 rounded-lg shadow-sm focus:outline-none focus:ring-0 focus:ring-blue-500 transition-colors"
       >
         <span className="text-sm text-gray-900 font-light">
           {selectedOption ? selectedOption.label : placeholder}

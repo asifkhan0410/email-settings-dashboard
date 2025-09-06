@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
-import { MoreHorizontal, Settings, Trash2 } from "lucide-react";
+import { MoreHorizontal, Trash2 } from "lucide-react";
+import manageIcon from "../assets/manage-icon.svg";
 
 interface MoreMenuProps {
   onManage: () => void;
@@ -42,7 +43,7 @@ export const MoreMenu: React.FC<MoreMenuProps> = ({ onManage, onRemove }) => {
             }}
             className="flex items-center gap-2 px-2 py-1.5 text-xs font-light text-gray-700 hover:bg-gray-50 w-full text-left rounded-md"
           >
-            <Settings className="w-4 h-4" />
+            <img src={manageIcon} alt="Manage" className="w-4 h-4" />
             Manage
           </button>
           <button

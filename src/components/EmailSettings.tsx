@@ -26,7 +26,7 @@ export const EmailSettings: React.FC<EmailSettingsProps> = ({
   return (
     <div className="">
       <div className="mb-3 px-5">
-        <h2 className="text-xl font-semibold text-gray-900 mb-1 leading-6">
+        <h2 className="text-2xl font-medium text-gray-900 mb-1 leading-6">
           Email settings
         </h2>
         <p className="text-sm text-gray-400 font-light">
@@ -34,10 +34,10 @@ export const EmailSettings: React.FC<EmailSettingsProps> = ({
         </p>
       </div>
 
-      <div className="space-y-4 bg-white rounded-3xl p-5 shadow-sm border border-gray-100">
+      <div className="space-y-6 bg-white rounded-3xl p-5 shadow-sm border border-gray-100">
         {/* Primary email address */}
-        <div className="flex items-center justify-between gap-4 border-b border-gray-100 pb-4">
-          <div className="flex flex-col gap-1 w-full max-w-[65%]">
+        <div className="flex items-start sm:items-center justify-between flex-col sm:flex-row sm:gap-6 gap-3 border-b border-gray-200 pb-6">
+          <div className="flex flex-col gap-1 w-full max-w-[100%] sm:max-w-[60%]">
             <label className="block text-sm font-medium text-gray-900">
               Primary email address
             </label>
@@ -55,8 +55,8 @@ export const EmailSettings: React.FC<EmailSettingsProps> = ({
         </div>
 
         {/* Backup email address */}
-        <div className="flex items-center justify-between gap-4 border-b border-gray-100 pb-4">
-          <div className="flex flex-col gap-1 w-full max-w-[65%]">
+        <div className="flex items-start sm:items-center justify-between flex-col sm:flex-row sm:gap-6 gap-3 border-b border-gray-200 pb-6">
+          <div className="flex flex-col gap-1 w-full max-w-[100%] sm:max-w-[60%]">
             <label className="block text-sm font-medium text-gray-900">
               Backup email address
             </label>
@@ -75,8 +75,8 @@ export const EmailSettings: React.FC<EmailSettingsProps> = ({
         </div>
 
         {/* Keep email addresses private */}
-        <div className="flex items-center justify-between gap-4">
-          <div className="flex flex-col gap-1 w-full max-w-[65%]">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between sm:gap-6 gap-3">
+          <div className="flex flex-col gap-1 w-full max-w-[100%] sm:max-w-[60%]">
             <h3 className="text-sm font-medium text-gray-900">
               Keep my email addresses private
             </h3>

@@ -48,9 +48,9 @@ export const EmailItem: React.FC<EmailItemProps> = ({
   };
 
   return (
-    <div className="flex items-center justify-between py-4 first:pt-0 last:pb-0 border-b border-gray-100 last:border-b-0">
+    <div className="flex items-center justify-between py-2.5 first:pt-0 last:pb-0 border-b border-gray-200 last:border-b-0">
       <div className="flex flex-col flex-1 min-w-0 gap-2">
-        <div className="flex items-center gap-3">
+        <div className="flex items-start sm:items-center flex-col sm:flex-row sm:gap-3 gap-2">
           <span className="text-sm font-normal text-gray-900 break-all">
             {email.address}
           </span>

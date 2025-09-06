@@ -35,7 +35,7 @@ export const MoreMenu: React.FC<MoreMenuProps> = ({ onManage, onRemove }) => {
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 top-8 bg-white rounded-lg shadow-lg border border-gray-200 shadow-color-gray-200 min-w-[120px] z-10 p-1">
+        <div className="absolute right-0 top-8 bg-white rounded-lg shadow-lg border border-gray-200 shadow-color-gray-200 min-w-[140px] z-10 p-1">
           <button
             onClick={() => {
               onManage();

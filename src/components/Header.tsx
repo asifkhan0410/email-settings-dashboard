@@ -11,7 +11,7 @@ export const Header: React.FC<HeaderProps> = ({ title, onBack }) => {
     <header className="flex items-center gap-1">
       <button
         onClick={onBack}
-        className="p-2 hover:bg-gray-100 rounded-full transition-colors"
+        className="p-2 pr-1 hover:bg-gray-100 rounded-full transition-colors -ml-4"
         aria-label="Go back"
       >
         <ArrowLeft className="w-4 h-4 text-gray-700" />
